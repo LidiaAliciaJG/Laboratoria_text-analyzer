@@ -6,8 +6,36 @@
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+<header>
+  <h1>Analizador de texto</h1>
+</header>
+
+<section>
+<h2>Analiza tu texto, solo colócalo en el recuadro:</h2>
+</section>
+
+<aside>
+<ul>
+  <li data-testid="word-count" class="words">Palabras: 0</li>
+  <li data-testid="character-count" class="chars">Carácteres: 0</li>
+  <li data-testid="character-no-spaces-count" class="charsNS">Solo carácteres: 0</li>
+  <li data-testid="number-count" class="num">Números: 0</li>
+  <li data-testid="number-sum" class="sum">Suma de números: 0</li>
+  <li data-testid="word-length-average" class="num">Longitud promedio: 0</li>
+</ul>
+
+<button id="reset-button">prueba</button>
+</aside>
+
+<main>
+<textarea name="user-input" cols="40" rows="10"></textarea>
+</main>
+
+<footer>
+  <p>Por Lidia Alicia JG (2023)</p>
+</footer>
+
   <script src="index.js" type="module"></script>
 </body>
 </html>
