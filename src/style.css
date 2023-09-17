@@ -15,20 +15,39 @@ section {
 aside {
   position: relative;
   float:left;
-  width: 25%; 
+  width: 20%; 
   top: 0px;
   bottom: 0px;
-  left: 20%;
-  background-color: rgb(196, 196, 196);
+  left: 25%;
+  text-align: center;
 }
 
 ul {
     list-style: none;
+    background-color: rgb(196, 196, 196);
+    padding: 15px 25px;
+    text-align: left;
 }
 
 #reset-button {
-    background-color: brown;
-}
+    background-color: rgb(44, 44, 44);
+    color: #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 15px;
+    text-align: center;	
+    border: none;
+  }
+  
+  #reset-button:hover {
+    background-color: rgb(66, 66, 66);
+    }
+  
+  #reset-button:active {
+    background-color: rgb(66, 66, 66);
+    transform: translateY(1px);
+  }
 
 main {
     position: relative;
