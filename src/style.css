@@ -22,11 +22,24 @@ aside {
   text-align: center;
 }
 
+textarea[name="user-input"] {
+  color: #555555;
+  font-family:'Courier New', Courier, monospace;
+  padding: 15px;
+}
+
 ul {
     list-style: none;
     background-color: rgb(196, 196, 196);
     padding: 15px 25px;
     text-align: left;
+}
+
+li {
+  border-bottom-width: 4px;
+  border-bottom: black solid;
+  padding: 5px 0 5px 10px;
+  box-sizing: border-box;
 }
 
 #reset-button {

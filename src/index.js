@@ -4,34 +4,34 @@ import analyzer from './analyzer.js';
 
 const btn= document.getElementById("reset-button");
 btn.addEventListener("click", function () {
-         txt.value = "";
-         palabras.innerHTML = "Palabras: 0";
-         caracteres.innerHTML = "Carácteres: 0";
-         caracteresNS.innerHTML = "Solo carácteres: 0";
-         numeros.innerHTML = "Números: 0";
-         suma.innerHTML = "Suma de números: 0";
-         promedio.innerHTML = "Longitud promedio: 0";
+  txt.value = "";
+  palabras.innerHTML = "Palabras: 0";
+  caracteres.innerHTML = "Carácteres: 0";
+  caracteresNS.innerHTML = "Solo carácteres: 0";
+  numeros.innerHTML = "Números: 0";
+  suma.innerHTML = "Suma de números: 0";
+  promedio.innerHTML = "Longitud promedio: 0";
 });
 
-let palabras= document.querySelector("li.words");
-let caracteres= document.querySelector("li.chars");
-let caracteresNS= document.querySelector("li.charsNS");
-let numeros= document.querySelector("li.num");
-let suma= document.querySelector("li.sum");
-let promedio= document.querySelector("li.prom");
-let txt= document.querySelector("textarea");
-const input=txt.addEventListener("input", function () {
-    let txtinput = txt.value;
-        console.log(txtinput);
-        palabras.innerHTML = "Palabras: "+analyzer.getWordCount(txtinput);
-        caracteres.innerHTML = "Carácteres: "+analyzer.getCharacterCount(txtinput);
-        caracteresNS.innerHTML = "Solo carácteres: "+analyzer.getCharacterCountExcludingSpaces(txtinput);
-        numeros.innerHTML = "Números: "+analyzer.getNumberCount(txtinput);
-        suma.innerHTML = "Suma de números: "+analyzer.getNumberSum(txtinput);
-        promedio.innerHTML = "Longitud promedio: "+analyzer.getAverageWordLength(txtinput);
+const palabras= document.querySelector("li.words");
+const caracteres= document.querySelector("li.chars");
+const caracteresNS= document.querySelector("li.charsNS");
+const numeros= document.querySelector("li.num");
+const suma= document.querySelector("li.sum");
+const promedio= document.querySelector("li.prom");
+const txt= document.querySelector("textarea");
+
+txt.addEventListener("input", function () {
+  const txtinput = txt.value;
+  palabras.innerHTML = "Palabras: "+analyzer.getWordCount(txtinput);
+  caracteres.innerHTML = "Carácteres: "+analyzer.getCharacterCount(txtinput);
+  caracteresNS.innerHTML = "Solo carácteres: "+analyzer.getCharacterCountExcludingSpaces(txtinput);
+  numeros.innerHTML = "Números: "+analyzer.getNumberCount(txtinput);
+  suma.innerHTML = "Suma de números: "+analyzer.getNumberSum(txtinput);
+  promedio.innerHTML = "Longitud promedio: "+analyzer.getAverageWordLength(txtinput);
 });
 
-export { input };
+
 
 //GetElementByName obtiene una lista -> se crea error si solo se pide su valor, se necesita matriz
 //const btn= document.getElementById("btn");
