@@ -3,7 +3,7 @@ const analyzer = {
   getWordCount: (txtinput) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
     //let wordsError = txtinput.replace(/ +/g," ").replace(/^ /,"").replace(/ $/,"");
-    const wordsError = txtinput.replace(/ +/g," ").trim();
+    const wordsError = txtinput.replace(/[.,:;\-_?¡¿!"'()[\]{}«»]/g,"").replace(/ +/g," ").trim();
     let words = wordsError.split(' ').length;
     if (wordsError==="") {
       words=0;
@@ -22,15 +22,23 @@ const analyzer = {
   },
   getAverageWordLength: (txtinput) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const words = txtinput.replace(/ +/g," ").trim();
+    const words = txtinput.replace(/\[/g,"(").replace(/\]/g,")").replace(/ +/g," ").trim();
     const savewords = words.split(' ');
     let wordslength = 0;
     let sum=0;
+    const regex = /[a-zA-z]/;
+    let Numwords=Number(savewords.length);
     for(let i = 0; i < savewords.length; i++) {
-      wordslength= savewords[i].length;
-      sum += Number(wordslength);
+      wordslength= savewords[i].length; //num de caracteres en cada palabra
+      const findwords=savewords[i].search(regex); //num con letras
+      if (findwords===-1) { //si es solo num
+        sum += 0;
+        Numwords -= 1
+      } else {
+        sum += Number(wordslength);
+      }
     }
-    const promedio=sum/Number(savewords.length);
+    const promedio=sum/Numwords || 0;
     //return Number(promedio.toFixed(2));
     return Math.round(promedio*100)/100;
   },
@@ -43,12 +51,16 @@ const analyzer = {
     //return count;
     const wordsError = txtinput.replace(/ +/g," ").trim();
     const words = wordsError.split(' ');
-    const regex = /[a-zA-z]/;
+    const regexABC = /[a-zA-z]/;
+    const regexNum = /[0-9]/;
     let count =0;
     for(let i = 0; i < words.length; i++) {
-      const findnum=words[i].search(regex);
-      if (findnum===-1) {
-        count += 1;
+      const findnum=words[i].search(regexABC); //es un num o tiene letras?
+      const findchar=words[i].search(regexNum); //es un num o es caracter?
+      if (findnum===-1) { //num -> -1 letras->0,1
+        if (findchar===0) { //no char ->0
+          count += 1;
+        }
       }
     }
     return count;
@@ -63,14 +75,16 @@ const analyzer = {
     const wordsError = txtinput.replace(/ +/g," ").trim();
     const words = wordsError.split(' ');
     const regex = /[a-zA-z]/;
-    let sum=0
+    let sum=0;
+    let respuesta=0;
     for(let i = 0; i < words.length; i++) {
       const findnum=words[i].search(regex);
       if (findnum===-1) {
         sum+=parseFloat(words[i]);
       }
     }
-    return Math.round(sum*100)/100;
+    respuesta=Math.round(sum*100)/100 || 0;
+    return respuesta;
   },
 };
 

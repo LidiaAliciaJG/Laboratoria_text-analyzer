@@ -13,12 +13,12 @@ btn.addEventListener("click", function () {
   promedio.innerHTML = "Longitud promedio: 0";
 });
 
-const palabras= document.querySelector("li.words");
-const caracteres= document.querySelector("li.chars");
-const caracteresNS= document.querySelector("li.charsNS");
-const numeros= document.querySelector("li.num");
-const suma= document.querySelector("li.sum");
-const promedio= document.querySelector("li.prom");
+const palabras= document.querySelector("li[data-testid='word-count']");
+const caracteres= document.querySelector("li[data-testid='character-count']");
+const caracteresNS= document.querySelector("li[data-testid='character-no-spaces-count']");
+const numeros= document.querySelector("li[data-testid='number-count']");
+const suma= document.querySelector("li[data-testid='number-sum']");
+const promedio= document.querySelector("li[data-testid='word-length-average']");
 const txt= document.querySelector("textarea");
 
 txt.addEventListener("input", function () {
