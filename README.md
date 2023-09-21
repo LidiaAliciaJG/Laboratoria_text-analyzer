@@ -7,47 +7,50 @@ Este sitio web es un analizador de texto; permite la extracción de datos de un 
 ## Índice
 
 * [1. Descripción del proyecto](#descripción-del-proyecto)
-* [2. Características de la aplicación](#Características-de-la-aplicación-y-demostración)
-* [3. Acceso al proyecto](#acceso-proyecto)
-* [4. Tecnologías utilizadas](#tecnologías-utilizadas)
-* [5. Desarrolladores del Proyecto](#personas-desarrolladores)
-* [6. Licencia](#licencia)
+* [2. Características de la aplicación](#características-de-la-aplicación)
+* [3. Deploy](#deploy)
+* [4. Pruebas](#pruebas)
+* [5. Tecnologías](#tecnologías)
+* [6. Autora](#autora)
 
 ## Descripción del proyecto
-(explicación de su proyecto con tu objetivo principal)
+Este analizador de texto se ha desarrollado para ser utilizado por un usuario que busque conocer la cantidad de palabras, carácteres y números, la suma de éstos y la longitud promedio de las palabras ingresadas. Este proyecto es aplicable en el ámbito escolar al solicitar ensayos con requerimientos específicos, así como en un ámbito laboral donde se desee crear textos con un límite tanto para redes sociales como para otras plataformas.
 
-herramientas de planning Notion, prototipaddo, breve explicación de como se desarrollo, para que se usa
-
+El proyecto inició con un prototipado de baja fidelidad que incluye interacción, el cual se muestra a continuación.
 ![Esquema del prototipado de baja resolución](https://github.com/LidiaAliciaJG/Laboratoria_text-analyzer/blob/691465a83b31f248df74e41e658b474e14e10464/Prototipo.gif)
+
+Para su desarrollo se realizó una planeación con las etapas que se pueden observar en la siguiente imagen:
 
 
 ## Características de la aplicación
+El proyecto mantiene la siguiente estructura:
+
+
 ### Funcionalidades del proyecto
-Ejemplo con imagen
-- `Cantidad de palabras`: descripción de la funcionalidad 1
-- `Cantidad de caracteres`: descripción de la funcionalidad 2
-- `Cantidad de solo caracteres`: descripción relacionada con la funcionalidad 2
-- `Cantidad de números`: descripción de la funcionalidad 3
--  `Suma de los números`: descripción de la funcionalidad 3
--  `Longitud promedio de las palabras`: descripción de la funcionalidad 3
--  `Botón de Borrar`: descripción de la funcionalidad 3
+- `Cantidad de palabras`: Cuenta las palabras en el texto de entrada y muestra la cantidad al usuario.
+- `Cantidad de caracteres`: Cuenta el número de carácteres en el texto de entrada, incluidos espacios y signos de puntuación, y muestra la cantidad al usuario.
+- `Cantidad de solo caracteres`: Cuenta el número de carácteres en el texto de entrada sin considerar los espacios ni signos de puntuación, y se muestra la cantidad al usuario.
+- `Cantidad de números`: Cuenta cuántos números hay en el texto de entrada, sin considerar los números dentro de una palabra y muestra la cantidad al usuario.
+-  `Suma de los números`: Considerando los números que hay en el texto de entrada con la condición anterior, suma todas las cifras y muestra el resultado al usuario.
+-  `Longitud promedio de las palabras`: Calcula el promedio de caracterés que incluyen las palabras en el texto de entrada y muestra el resultado al usuario.
+-  `Botón de Borrar`: Botón que permite al usuario eliminar cualquier dato ingresado en la entrada de texto y las métricas mostradas se resetean.
+-  `Entrada de texto`: Permite al usuario ingresar el texto que desea analizar.
 
-## Acceso al proyecto
-\## 📁 Acceso al proyecto
+## Deploy
+La aplicación se encuentra publicado a través de Github Pages, accesible a todo usuario: [Link](https://lidiaaliciajg.github.io/Laboratoria_text-analyzer/src/index.html).
 
-**Indica cómo se puede descargar o acceder al código fuente del proyecto, ya sea proyecto inicial o final**
+## Pruebas
+El proyecto contiene una configuración para ser ejecutado en Github Action donde se evalúa el funcionamiento y requirimientos esperados.
 
-\## 🛠️ Abre y ejecuta el proyecto
 
-**Muestra las instrucciones necesarias para abrir y ejecutar el proyecto**
-
-## Tecnologías utilizadas
+## Tecnologías
 * HTML
 * CSS
 * JavaScript
 
 ## Autora
 
-[Lidia Alicia Julián González](https://github.com/LidiaAliciaJG)
+| [<img src="https://github.com/LidiaAliciaJG.png?size=139">](https://github.com/LidiaAliciaJG) | [Lidia Alicia JG](https://github.com/LidiaAliciaJG) <br> <sub>[Sitio web](https://lidiaaliciajg.github.io/)</sub> <br> <sub>[LinkedIn](https://www.linkedin.com/in/lidiaaliciajg/)</sub> |
+| :---: | :---: |
 
-## Licencia
+
