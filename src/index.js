@@ -5,12 +5,12 @@ import analyzer from './analyzer.js';
 const btn= document.getElementById("reset-button");
 btn.addEventListener("click", function () {
   txt.value = "";
-  palabras.innerHTML = "Palabras: 0";
-  caracteres.innerHTML = "Carácteres: 0";
-  caracteresNS.innerHTML = "Solo carácteres: 0";
-  numeros.innerHTML = "Números: 0";
-  suma.innerHTML = "Suma de números: 0";
-  promedio.innerHTML = "Longitud promedio: 0";
+  palabras.innerHTML = "Cantidad de palabras: 0";
+  caracteres.innerHTML = "Cantidad de carácteres: 0";
+  caracteresNS.innerHTML = "Cantidad de solo carácteres: 0";
+  numeros.innerHTML = "Cantidad de números: 0";
+  suma.innerHTML = "Suma de los números: 0";
+  promedio.innerHTML = "Longitud promedio de las palabras: 0";
 });
 
 const palabras= document.querySelector("li[data-testid='word-count']");
@@ -23,12 +23,12 @@ const txt= document.querySelector("textarea");
 
 txt.addEventListener("input", function () {
   const txtinput = txt.value;
-  palabras.innerHTML = "Palabras: "+analyzer.getWordCount(txtinput);
-  caracteres.innerHTML = "Carácteres: "+analyzer.getCharacterCount(txtinput);
-  caracteresNS.innerHTML = "Solo carácteres: "+analyzer.getCharacterCountExcludingSpaces(txtinput);
-  numeros.innerHTML = "Números: "+analyzer.getNumberCount(txtinput);
-  suma.innerHTML = "Suma de números: "+analyzer.getNumberSum(txtinput);
-  promedio.innerHTML = "Longitud promedio: "+analyzer.getAverageWordLength(txtinput);
+  palabras.innerHTML = "Cantidad de palabras: "+analyzer.getWordCount(txtinput);
+  caracteres.innerHTML = "Cantidad de carácteres: "+analyzer.getCharacterCount(txtinput);
+  caracteresNS.innerHTML = "Cantidad de solo carácteres: "+analyzer.getCharacterCountExcludingSpaces(txtinput);
+  numeros.innerHTML = "Cantidad de números: "+analyzer.getNumberCount(txtinput);
+  suma.innerHTML = "Suma de los números: "+analyzer.getNumberSum(txtinput);
+  promedio.innerHTML = "Longitud promedio de las palabras: "+analyzer.getAverageWordLength(txtinput);
 });
 
 

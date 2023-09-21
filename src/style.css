@@ -1,8 +1,16 @@
 header {
     text-align: center;
     position: relative;
-    top: 0px;
     width: 100%;
+    background-color: #FB897F;
+    margin-top: -20px;
+    padding: 20px 0px 5px;
+}
+
+body {
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
 }
 
 section {
@@ -10,6 +18,7 @@ section {
     position: relative;
     top: 10%;
     width: 100%;
+    margin-top: 50px;
 }
 
 aside {
@@ -26,7 +35,13 @@ textarea[name="user-input"] {
   color: #555555;
   font-family:'Courier New', Courier, monospace;
   padding: 15px;
+  margin-top: 15px;
+  border-color: #507848;
+  border-radius: 30px;
+  outline: none;
+  resize: none;
 }
+
 
 ul {
   padding: 0;
@@ -34,35 +49,35 @@ ul {
 
 .respuesta {
   background-clip: border-box;
-  background-color: rgb(196, 196, 196);
   border-bottom-width: 4px;
-  border-bottom: black solid;
+  border-bottom: #507848 solid;
   padding: 5px 0 5px 10px;
   list-style: none;
   padding: 10px 10px;
   text-align: left;
   margin: 0;
+  color: #784642;
 }
 
 #reset-button {
-    background-color: rgb(44, 44, 44);
-    color: #ffffff;
+    background-color: #AD89C4;
+    color: black;
     border-radius: 15px;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 10px 120px;
     font-size: 15px;
     text-align: center;	
     border: none;
+    margin-top: 8px;
   }
   
   #reset-button:hover {
-    background-color: rgb(66, 66, 66);
+    background-color: #674E78;
+    color: white;
+    font-weight: 800;
+    transform: translateY(3px);
     }
   
-  #reset-button:active {
-    background-color: rgb(66, 66, 66);
-    transform: translateY(1px);
-  }
 
 main {
     position: relative;
@@ -79,4 +94,5 @@ footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+    background-color: #FB897F;
 }
