@@ -1,4 +1,5 @@
 # Analizador de texto
+![Visualización del proyecto](https://github.com/LidiaAliciaJG/Laboratoria_text-analyzer/blob/1b9a89be29ff73b2212750d07c871ab5698857c0/ResultadoFinal.png)
 
 Proyecto desarrollado para el Bootcamp de Laboratoria en Desarrollo Web.
 
