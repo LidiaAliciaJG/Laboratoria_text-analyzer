@@ -5,6 +5,8 @@ Proyecto desarrollado para el Bootcamp de Laboratoria en Desarrollo Web.
 
 Este sitio web es un analizador de texto; permite la extracción de datos de un texto, en este caso, para conocer 6 métricas: cantidad de palabras, cantidad de caracteres, cantidad de caracteres excluyendo espacios y signos de puntuación, cantidad de cifras numéricas, la suma total de estos números y la longitud promedio de las palabras.
 
+***
+
 ## Índice
 
 * [1. Descripción del proyecto](#descripción-del-proyecto)
