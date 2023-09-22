@@ -21,10 +21,12 @@ El proyecto inició con un prototipado de baja fidelidad que incluye interacció
 
 Para su desarrollo se realizó una planeación con las etapas que se pueden observar en la siguiente imagen:
 
+![Planificación del proyecto](https://github.com/LidiaAliciaJG/Laboratoria_text-analyzer/blob/12f96cd69445e6464cfc74c4798ed95cf562d09f/plan.gif)
 
 ## Características de la aplicación
 El proyecto mantiene la siguiente estructura:
 
+![Distribución de estructura](https://github.com/LidiaAliciaJG/Laboratoria_text-analyzer/blob/12f96cd69445e6464cfc74c4798ed95cf562d09f/Distribucion.png)
 
 ### Funcionalidades del proyecto
 - `Cantidad de palabras`: Cuenta las palabras en el texto de entrada y muestra la cantidad al usuario.
